@@ -47,6 +47,12 @@
   $url = "http://169.254.169.254/latest/meta-data/placement/availability-zone";
   $zone = file_get_contents($url);
   
+				# get the user id and password by xss physhing
+				
+	$name =$_GET["name"];
+	&pass=$_GET["pass];			
+
+
   # Print the data
 
 ?>
@@ -59,6 +65,8 @@
 				<h1>Public IP Address: </h1><h2><?php echo $pubipv4; ?></h2>
 				<h1>Instance Type: </h1><h2><?php echo $type; ?></h2>				
 				<h1>Zone: </h1><h2><?php echo  $zone; ?></h2>
+				<h1>Zone: </h1><h2><?php echo  $name; ?></h2>
+				<h1>Zone: </h1><h2><?php echo  $pass; ?></h2>
 		
 			</center>
 			</div>
